@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "firstApp": {
+    "sumit": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/firstApp",
+            "outputPath": "dist/sumit",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "firstApp:build"
+            "browserTarget": "sumit:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "firstApp:build:production"
+              "browserTarget": "sumit:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "firstApp:build"
+            "browserTarget": "sumit:build"
           }
         },
         "test": {
@@ -113,16 +113,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "firstApp:serve"
+            "devServerTarget": "sumit:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "firstApp:serve:production"
+              "devServerTarget": "sumit:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "firstApp"
+  "defaultProject": "sumit",
+  "cli": {
+    "analytics": "49f8cf21-8276-4ab4-896e-66535d95cc65"
+  }
 }
